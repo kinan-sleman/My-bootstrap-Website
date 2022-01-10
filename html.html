@@ -1,0 +1,343 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width , initial-scale=1.0"/>
+        <title>HTML</title>
+        <meta name="describtion" content="Bootstrap هو عبارة عن إطار عمل حر ومفتوح المصدر يحتوي على أكواد جاهزة مكتوبة بلغات html & CSS & javascript "/>
+        <meta name="keywords" content="html , css , javascript"/>
+        <meta name="author" content="kinan sleman"/>
+        <meta property="og:title" content="bootstrap" />
+        <meta property="og:describtion"  content="Bootstrap هو عبارة عن إطار عمل حر ومفتوح المصدر يحتوي على أكواد جاهزة مكتوبة بلغات html & CSS & javascript "/>
+        <meta property="og:img" content="../image.jpg"/>
+        <meta property="og:img:width" content="630"/>
+        <meta property="og:img:height" content="1200"/>
+        <meta name="twitter:card" content="Summary_large_image"/>
+        <meta name="twitter:title" content="bootstrap"/>
+        <meta name="twitter:describtion" content="Bootstrap هو عبارة عن إطار عمل حر ومفتوح المصدر يحتوي على أكواد جاهزة مكتوبة بلغات html & CSS & javascript "/>
+        <meta name="twitter:img" content="../image.jpg"/>
+        <meta name="site" content="@kinan_sleman"/>
+        <meta name="creator" content="@kinan_sleman"/>
+        <meta name="theme-color" content="#ffffff"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css"
+rel="stylesheet"
+/>
+        <link rel="icon" href="img/image.jpg">
+        <link rel="touch" href="img/image.jpg">
+        <link rel="apple-touch-icon" href="img/image.jpg">
+        <style>
+            *{
+                padding:0;
+                margin:0;
+            }
+            #MarqueeID{
+                background-color: red;
+                color:white;
+                width:100%;
+                padding:10px;
+            }
+            @media only screen and (max-width:767px) {
+                #kk{
+                    direction:rtl;
+                }
+            }
+            .dropdown-item{
+                color:#ff3131 !important;
+            }
+            .dropdown-item:hover{
+                color:#fff !important;
+                background-color:#ff3131 !important;
+            }
+            
+            marquee span{
+                display:inline-block;
+                text-align:center;
+            }
+            video{
+                display: block;
+                height:170px;
+            }
+            main{
+                color:white;
+                animation-name:ChangeColor;
+                animation-duration:10s;
+                animation-delay:0s;
+                animation-iteration-count:infinite;
+                animation-direction:alternate-reverse;
+                animation-timing-function:linear; 
+            }
+            @keyframes ChangeColor {
+                0%{
+                    background-color:rgb(248, 115, 115);
+                    color:white;
+                }
+                25%{
+                    background-color:rgb(199, 79, 79);
+                    color:white;
+                }
+                50%{
+                    background-color:rgb(5, 189, 180);
+                    color:white;
+                }
+                75%{
+                    background-color:rgb(44, 117, 253);
+                    color:white;
+                }
+                100%{
+                    background-color:rgb(255, 237, 237);
+                    color:black;
+                }
+            }
+            @media only screen and (max-width:767px){
+                video{
+                    width:100% !important;
+                    height:300px !important; 
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <noscript>
+            <marquee behavior="scroll" direction="right" scrollamount="20" id="MarqueeID" >
+                <h1><span dir="rtl"><bdi>إن تطبيقنا الويب لن يعمل بشكل صحيح وذلك لأن المتصفح لا يدعم javascript أو انه تم تعطيل javascript ضمن المتصفح .... إدخل إلى إعدادات المتصفم وقم بتمكين javascript ضمنه أو استخدم إحدى المتصفحات الحديثة مثل  google chrome أو firefox</bdi></span></h1>
+            </marquee>
+        </noscript>     
+
+        <nav style="background-color:#ff3131 !important;" class="fixed-top navbar navbar-expand-md bg-success navbar-dark">
+            <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarToggleExternalContent"
+      aria-controls="navbarToggleExternalContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+              <div id="kk">
+                <a class="navbar-brand" href="#">
+                    <img  src="img/image.jpg" width="30" height="30" class="rounded-circle ml-3 mr-3 d-inline-block align-top" alt="">
+                    kinan sleman
+                  </a>
+              </div>
+              
+              <div dir="rtl" class="collapse navbar-collapse" id="navbarToggleExternalContent">
+                <ul class="navbar-nav" style="text-align:right;"  >
+                
+                    <li class="nav-item"><a href="index.html" class="nav-link  ">الصفحة الرئيسية</a></li>
+                    <li class="nav-item"><a href="" class="nav-link ">الفيديوهات</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link ">قواثم التشغيل</a></li>
+                    <li class="nav-item"><a href="contect.html" class="nav-link ">تواصل معنا</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link ">حول</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          عناويننا
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="html.html">HTML</a>
+                          <a class="dropdown-item" href="#">CSS</a>
+                          <a class="dropdown-item" href="#">JAVASCRIPT</a>
+                        </div>
+                      </li>
+                </ul>
+              </div>
+        </nav>
+      <div style="height:56px;"></div>
+        
+        <main   >
+            <h2 dir="rtl" style="text-align:right;">تعلم اللغة html مع coder shiyar من الصفر حتى الاحتراف </h2>
+            <div class="row">
+                <div class="col-md"><video style="width:100%;" src="../HTML/شرح html - دورة html كاملة _ حلقة _00 - ماذا سوف تتعلم أثناء الكورس ؟(720P_HD).mp4"
+                    controls loop preload="none"></video>
+                <h2 style="text-align:center;">00</h2></div>
+                <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _01 - تحميل وتنصيب محرر اكواد(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">01</h2></div>
+                <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _02 - اساسيات لغة HTML(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">02</h2></div>
+                <div class="col-md"><video style="width:100%;" controls  loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _03 - عناصر عناوين النصية html headings h1 h5(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">03</h2></div>
+                </div>
+                <div class="row">
+                <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _04 - شرح عنصر b _ em _ i _ small _ strong _ sub - sup _ del(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">04</h2></div>
+                <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/تعلم html - درس _05 _ شرح تحكم بالإتجاه النص _ اللغة الموقع _ كيفية استخدام اشكال خاصة بموقعك(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">05</h2></div>
+                <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة - _06 _ شرح عنصر a و ميزة href مع mailto _ tel _ link _ id name(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">06</h2></div>
+                <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _07 -  طريقة اضافة صور لموقعك - html img(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">07</h2></div>
+                </div>
+                <div class="row">
+                <div class="col-md"><video style="width:100%;" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _08 -  شرح عناصر table و tr _ td _ th  _ colspan _ rowspan(720P_HD).mp4"
+                    controls loop preload="none"></video>
+                <h2 style="text-align:center;">08</h2></div>
+                <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _00 - ماذا سوف تتعلم أثناء الكورس ؟(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">09</h2></div>
+                <div class="col-md"><video  style="width:100%;"controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _10 - شرح عنصر audio - طريقة وضع ملفات صوتية في موقعك(480P)_1.mp4"></video>
+                <h2 style="text-align:center;">10</h2></div>
+                <div class="col-md"><video style="width:100%;" controls  loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _11 - شرح html video - poster _ width _ height _ autoplay _ loop(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">11</h2></div>
+                </div>
+                <div class="row">
+                    <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _12 - طريقة عرض ملفات pdf ضمن موقع(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">12</h2></div>
+                
+                <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _13 - شرح embed _ طريقة عرض صور متحركة _ ملفات pdf _ في موقعك(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">13</h2></div>
+                <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _14 - طريقة عرض فيديوهات YouTube ضمن موقعك _ شرح ميزة rel(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">14</h2></div>
+                <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _15 - شرح html base - جلب ملفات من أستضافة خارجية(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">15</h2></div>
+                </div>
+                <div class="row">
+                <div class="col-md"><video style="width:100%;" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _16 - شرح عنصر details _ summary(720P_HD).mp4"
+                    controls loop preload="none"></video>
+                    <h2 style="text-align:center;">16</h2></div>
+                
+                <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _17 - شرح عنصر button من النوع submit _ reset _ button(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">17</h2></div>
+                <div class="col-md"><video  style="width:100%;"controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _18 - شرح عنصر input من نوع text _ date _ tel _ password _ email(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">18</h2></div>
+                <div class="col-md"><video style="width:100%;" controls  loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _19 - هيكل تسجيل دخول   مراجعة لدروس السابقة(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">19</h2></div>
+                </div>
+                <div class="row">
+                    <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _20 - شرح عنصر select   option _ size   disabled   form(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">20</h2></div>
+                <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _21 - استمارة تسجيل في الموقع _ مراجعة دروس السابقة(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">21</h2></div>
+                
+                <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _22 - كيفية إنشاء تعليقات - html comment(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">22</h2></div>
+                <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _23 - شرح input radio(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">23</h2></div>
+                </div>
+                <div class="row">
+                    <div class="col-md"><video style="width:100%;" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _24 - شرح input file(720P_HD).mp4"
+                    controls loop preload="none"></video>
+                <h2 style="text-align:center;">24</h2></div>
+                    <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _25 - شرح عنصر input من نوع color _ hidden _ url _ date _ number(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">25</h2></div>
+                
+                <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _26 - شرح عنصر meta viewport _ utf-8 و ميزة lang _ dir(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">26</h2></div>
+                <div class="col-md"><video style="width:100%;" controls  loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _27 - طريقة إنشاء موقع متعدد الصفحات و ربطه ببعضهم البعض(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">27</h2></div>
+                </div>
+                <div class="row">
+                    <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _28 - شرح عنصر meter _ كيفية تصميم عنصر meter(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">28</h2></div>
+                <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _29 - شرح textarea(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">29</h2></div>
+                
+                    <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _30 - شرح iframe _ sandbox _ width _ height(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">30</h2></div>
+                <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _31 - شرح عنصر hr _ تغير اللون الخط(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">31</h2></div>
+                </div>
+                <div class="row">
+                    <div class="col-md"><video style="width:100%;" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _32 - شرح عنصر pre(720P_HD).mp4"
+                    controls loop preload="none"></video>
+                <h2 style="text-align:center;">32</h2></div>
+                <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _33 - شرح الفرق بين div و span(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">33</h2></div>
+                
+                    <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _34 - طريقة وضع خريطة للموقع(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">34</h2></div>
+                <div class="col-md"><video style="width:100%;" controls  loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _35 - تحديد مسار الصور _ فيديو _ pdf _ اغاني في html(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">35</h2></div>
+                </div>
+                <div class="row">
+                    <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _36 - شرح bdi في html - حل مشكلة الكتابة(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">36</h2></div>
+                <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _37 - شرح main _nav _ aside _ header _ footer article _ section(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">37</h2></div>
+                
+                    <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _38 - اساسيات لغة html OR css(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">38</h2></div>
+                <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _39 - الفرق بين sub و sup(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">39</h2></div>
+                </div>
+                <div class="row">
+                    <div class="col-md"><video style="width:100%;" src="../HTML/شرح html - دورة html كاملة _ حلقة _40 - شرح العنصر legend _ Fieldset(720P_HD).mp4"
+                    controls loop preload="none"></video>
+                <h2 style="text-align:center;">40</h2></div>
+                <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _41 - الفرق بين id و class(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">41</h2></div>   
+                
+                    <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _42 - شرح link مع ميزة rel icon _ تحديد ايقونة الموقع(720P_HD).mp4"></video>
+                <h2 style="text-align:center;">42</h2></div>
+                <div class="col-md"><video style="width:100%;" controls  loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _43 - شرح عناصر  html meta لأجل seo _ ضبط موقع لمحركات البحث(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">43</h2></div>
+                </div>
+                <div class="row">
+                    <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _44 - شرح عنصر code _ abbr _ dfn _ address(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">44</h2></div>
+                <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _45 - تحديد كيفية عرض موقعك الويب في فيس بوك - Facebook meta(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">45</h2></div>
+                
+                    <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _46 - كيفية إنشاء زر لتحميل ملف عبر html(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">46</h2></div>
+                <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _47 _ شرح العنصر blockqout   paragraph    center(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">47</h2></div>
+                </div>
+                <div class="row">
+                    <div class="col-md"><video style="width:100%;" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _48 -شرح contenteditable   script في html(720P_HD).mp4"
+                    controls loop preload="none"></video>
+                    <h2 style="text-align:center;">48</h2></div>
+                <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _49 - شرح dialog في html(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">49</h2></div>
+                <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _50 - شرح meta twitter _ تحديد كيفية ظهور موقع عند نشر في تويتر(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">50</h2></div>
+                <div class="col-md"><video style="width:100%;" controls  loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _51 _ marquee html شرح   marquee attributes(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">51</h2></div>
+            </div>
+            <div class="row">
+                <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _52 _ تغير رسالة الخطأ التي تظهر عند حدوث خطأ في عنصر input(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">52</h2></div>
+                <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _53 _ طريقة رفع موقع على استضافة   دومين مجاني(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">53</h2></div>
+                <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة html كاملة _ حلقة _ _54 - شرح html title(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">54</h2></div>
+                <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة تعلم html كاملة _ _55 _ شرح بعض نقاط مهمة حول لغة html - اقتراحات لادوات مهمة(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">55</h2></div>
+            </div>
+            <div class="row">
+                <div class="col-md"><video style="width:100%;" src="../HTML/دورة html كاملة __ _56 _ طريقة تسجيل بالاختبار وطلب الشهادة HTML(720P_HD).mp4"
+                    controls loop preload="none"></video>
+                <h2 style="text-align:center;">56</h2></div>
+                <div class="col-md"><video style="width:100%;" controls loop preload="none" src="../HTML/شرح html - دورة تعلم html كاملة _ _57 _ شرح عنصر meta من نوع theme-color(720P_HD).mp4"></video>
+                    <h2 style="text-align:center;">57</h2></div>
+            </div>  
+                            
+            </div>
+        </main>
+        <footer style="text-align:center;" class="bg-secondary text-light">
+            <h2>مع التمنيات بالتوفيق و النجاح</h2>
+            <h2 class="w-100 shadow bg-primary d-block mx-auto" ><span class="pt-1">&#169</span>kinan sleman <span class="badge badge-light badge-pill">2021</span></h2>
+        </footer>
+        <!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js"
+></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
